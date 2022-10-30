@@ -12,8 +12,8 @@ const Nav = () => {
     <div className="nav">
       <div className="logo">Logo</div>
       <div className="links">
-        <a href="#">Signup</a>
-        <a href="#">Login</a>
+        <a href="/">Signup</a>
+        <a href="/">Login</a>
       </div>
     </div>
   );
@@ -86,6 +86,7 @@ const Home = () => {
       ],
     }
   });
+  console.log(setProducts);
   const navigate = useNavigate();
   return (
     <>
@@ -103,7 +104,7 @@ const Home = () => {
           {
             products["Household Items"].map((p)=>(
               <div className="product" onClick={()=>navigate("/product")}>
-                <img src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
+                <img alt={p.name} src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
                 <div>{p.name}</div>
               </div>
             ))
@@ -118,7 +119,7 @@ const Home = () => {
           {
             products["Pooja Material"]["Lighting"].map((p)=>(
               <div className="product" onClick={()=>navigate("/product")}>
-                <img src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
+                <img alt={p.name} src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
                 <div>{p.name}</div>
               </div>
             ))
@@ -129,7 +130,7 @@ const Home = () => {
           {
             products["Pooja Material"]["Lighting"].map((p)=>(
               <div className="product" onClick={()=>navigate("/product")}>
-                <img src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
+                <img alt={p.name} src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
                 <div>{p.name}</div>
               </div>
             ))
@@ -140,7 +141,7 @@ const Home = () => {
           {
             products["Pooja Material"]["Lighting"].map((p)=>(
               <div className="product" onClick={()=>navigate("/product")}>
-                <img src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
+                <img alt={p.name} src="https://rukminim1.flixcart.com/image/416/416/k1jlyfk0/incense-holder/h/w/b/kapoor-dani-stand-for-home-office-nohunt-original-imafknhg9d5u4zzw.jpeg?q=70"/>
                 <div>{p.name}</div>
               </div>
             ))
